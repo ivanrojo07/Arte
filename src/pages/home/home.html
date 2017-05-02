@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Arte
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="padding">
+   <h2>Bienvenidos</h2>
+  <ion-list>
+    <ion-item *ngFor="let item of list">
+      {{ item.name }}
+    </ion-item>
+  </ion-list>
+  <button ion-button (click)="goToPintoresPage()">Pintores</button>
+</ion-content>
